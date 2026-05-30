@@ -8,12 +8,12 @@ binding = "AI"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "quanghoa-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_name = "sale-agent-messenger-db"
+database_id = "8b94b508-2225-4c41-b9e1-2eeebcaea665"
 
 [[kv_namespaces]]
 binding = "KV"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "9bfa6e93f84d48e3bce149bf6668053b"
 
 [[r2_buckets]]
 binding = "R2"
