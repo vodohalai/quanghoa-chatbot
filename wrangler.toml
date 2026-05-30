@@ -1,0 +1,31 @@
+name = "quanghoa-chatbot"
+main = "src/index.ts"
+compatibility_date = "2025-05-01"
+compatibility_flags = ["nodejs_compat"]
+
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "quanghoa-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "quanghoa-images"
+
+[vars]
+# Thay thế các giá trị này sau khi setup Facebook App
+FB_VERIFY_TOKEN = "REPLACE_WITH_YOUR_VERIFY_TOKEN"
+# Thêm secret vào wrangler secret (không đặt ở đây):
+# wrangler secret put FB_PAGE_ACCESS_TOKEN
+# wrangler secret put ADMIN_PASSWORD
+# wrangler secret put ADMIN_SECRET_KEY
+
+[observability]
+enabled = true
